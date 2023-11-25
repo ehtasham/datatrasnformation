@@ -8,6 +8,9 @@ This is an app to Transform Data from one table to another
 streamlit run main.py
 ```
 
-### deployed instance 
+### deployed instance
 
-https://bug-free-zebra-5pq55p9gxgh7vrv-8502.app.github.dev/
+
+https://datatrasnformation-g6gtqpsqp4dt82vecrrg5r.streamlit.app/
+
+https://huggingface.co/spaces/ehtasham/datatransformation
