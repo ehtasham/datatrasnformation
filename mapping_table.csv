@@ -1,0 +1,3 @@
+Column Name in Template,Column Name in Source,Basis for the decision,check_mapping
+Date,Date_of_Policy,Format: raw_source.Date_of_Policy -> target.Date,True
+EmployeeName,FullName,Exact Match: raw_source.FullName -> target.EmployeeName,True

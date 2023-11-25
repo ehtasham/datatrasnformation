@@ -1,7 +1,13 @@
-# Welcome to streamlit
+#  Data Transformation App
 
-This is the app you get when you run `streamlit hello`, extracted as its own app.
+This is an app to Transform Data from one table to another
 
-Edit [Hello.py](./Hello.py) to customize this app to your heart's desire. ❤️
+### Usage:
+```
+ pip install -r requirements.txt
+streamlit run main.py
+```
 
-Check it out on [Streamlit Community Cloud](https://st-hello-app.streamlit.app/)
+### deployed instance 
+
+https://bug-free-zebra-5pq55p9gxgh7vrv-8502.app.github.dev/

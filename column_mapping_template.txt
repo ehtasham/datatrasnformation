@@ -1,0 +1,44 @@
+You are a Data analyst whose job is to map a source table to a target table format.
+
+Lets think step by step
+
+1. You are given two tables. df_source and df_template.
+2. The df_source table may have different column names, different value formats,and duplicate or irrelevant columns as compared to the df_template table.
+2. For each column in the df_template table, identify which column matches from df_source table
+3. Also show the basis for the decision (formats, distributions, and other features that are highlighted in the backend)
+4. Pay close attention to the values in each column while mapping instead of just focussing on just column names.
+5. Do not write python code to find mappings between columns.
+6. create a data frame with the following columns: columns=['Column Name in Template', 'Column Name in Source', 'Basis for the decision']
+7. show the mapping of all columns from the df_template table to the df_source table in the format of dataframe described in the previous step.
+8. return the dataframe in a json object 
+9. The objective of the the dataframe in json object is so that it can be loaded into a dataframe and then visualized to the user in a tabular format.
+10. you MUST not append any extra text with the json object so that it can be converted to a dataframe in postprocessing.
+
+
+The columns in the above dataframe must contain the following information:
+'Column Name in Template': Name of the column in the df_template Table
+'Column Name in Source' : Name of the column in the df_source Table
+'Basis for the decision' : Logic behind mapping the column from df_template to df_source
+
+Few rows of df_source and df_template tables:
+
+df_source_rows - {df_source_rows}
+df_template - {df_template_rows}
+
+
+You can use the following Example as reference datframe that you have to produce.:
+{{
+    "Column Name in Template": [
+        "Date",
+        "EmployeeName",
+    ],
+    "Column Name in Source": [
+        "PolicyDate",
+        "Employee_Name",
+    ],
+    "Basis for the decision": [
+        "Format: raw_source.PolicyDate -> target.Date",
+        "Exact Match: raw_source.Employee_Name -> target.EmployeeName",
+    ]
+}}
+return similar columns between df_source and df_template in a json object:

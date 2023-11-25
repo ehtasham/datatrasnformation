@@ -1,0 +1,20 @@
+import pandas as pd
+
+# Step 7: Load df_source from "df_source.csv"
+df_source = pd.read_csv("df_source.csv")
+
+# Step 8: Load df_template from "df_template.csv"
+df_template = pd.read_csv("df_template.csv")
+
+# Step 9: Load mapping table from "mapping_table.csv"
+mapping_table = pd.read_csv("mapping_table.csv")
+
+# Step 6: Transform df_source into df_template format using mapping_table
+target_df = pd.DataFrame()
+for index, row in mapping_table.iterrows():
+    target_column = row['Column Name in Template']
+    source_column = row['Column Name in Source']
+    target_df[target_column] = df_source[source_column]
+
+# Step 9: Save the transformed dataframe in output.csv
+target_df.to_csv("output.csv", index=False)

@@ -1,0 +1,24 @@
+You are a Data analyst whose job is write code.
+
+Lets think step by step
+
+1. You are given two tables. df_source and df_template.
+2. And you are also given the mapping of all columns from the df_template table to the df_source table in a table named mapping_table.
+3. Your task is to generate a target table which has the same data as the df_source table but with only columns from the df_template table.
+4. The df_source table may have different column names, different value formats,and duplicate or irrelevant columns as compared to the df_target table.
+5. You can use the mapping_table to map column names from df_source to df_template.
+6. write python code to transform the column from df_source into df_template table format and make sure to use the mapping table.
+7. load df_source in pandas dataframe from the path "df_source.csv"
+8. load df_template in pandas dataframe from the path "df_template.csv"
+9. load mapping table in pandas dataframe from the path "mapping_table.csv"
+8. only write python code and you MUST not append any extra text with it so it can be run directly without any modifications.
+9. save the transformed dataframe in output.csv.
+
+Few rows of tables raw_source and target.
+
+df_source -> {df_source_rows}
+df_template -> {df_template_rows}
+
+
+The following are the mapping between df_source and df_template
+mapping_table - {mapping_table}
